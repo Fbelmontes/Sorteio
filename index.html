@@ -1,0 +1,85 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+  }
+
+  #wheelContainer {
+    position: relative;
+  }
+
+  canvas {
+    border: 8px solid #333;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  #pointer {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #ff5722; /* Cor mais viva (laranja avermelhado) */
+    filter: drop-shadow(0 0 6px #ff5722);
+    z-index: 10;
+  }
+
+  #winners {
+    text-align: left;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .winner-column {
+    display: inline-block;
+    margin-right: 30px;
+  }
+
+  .winner-column h3 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .winner-column ol {
+    padding-left: 20px;
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #218838;
+  }
+
+  input[type="file"] {
+    margin-top: 20px;
+    padding: 8px;
+  }
+</style>
